@@ -5,11 +5,12 @@ body {
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #FFDC8D;
+      background-color: #000;
       font-family: 'Noto Sans', serif;
       color: #fff;
-      background-image: url("mbg.jpg");
-      background-position: top; 
+      background-image: url("bg.jpg"); 
+      background-repeat: no-repeat; 
+      background-size: cover;
       margin-right: 10px;
       margin-left: 10px;
       text-align: center;
@@ -36,25 +37,26 @@ body {
     }
 
     input[type=submit] {
-      background-color: #ff6d00;
+      background-color: #FF740C;
       color: white;
       padding: 14px 20px;
-      border: none;
       border-radius: 8px;
       cursor: pointer;
-      width: 70%;
+      width: 73%;
       margin-top: 15px;
       font-family: 'Noto Sans', serif;
       text-align: center;
       border: 2px solid #fff;
       font-size: 15px;
+      border: 3px solid #fff;
+      animation: bounceAnimation 4s infinite;
+
     }
     
     select {
       width: 100%;
       padding: 16px 20px;
       border: none;
-      border-radius: 4px;
       background-color: #f1f1f1;
       border-radius: 8px;
       font-family: 'Noto Sans', serif;
@@ -133,6 +135,23 @@ body {
 }
 
 
+/* Define the animation */
+@keyframes bounceAnimation {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply the animation to the submit button */
+
+
+
 /* add animation effects */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
@@ -148,9 +167,9 @@ body {
 
 .overlay {
       position: fixed;
-      width: 400px;
-      height: 720px;      
-      background-image: url('Newbg00.png');
+      width: 415px;
+      height: 730px;      
+      background-image: url('intro00.png');
       background-size: cover;
       display: block;
       
@@ -158,13 +177,9 @@ body {
 
     .overlay-content {
       
-    }
+    }    
     
     
-    
-    
-    
-   
 /* Styles for the random overlay loader */
     .random-overlay-loader {
       position: fixed;
@@ -180,8 +195,8 @@ body {
     }
 
     .random-loader {
-      border: 8px solid #f3f3f3; 
-      border-top: 8px solid #ff6d00;
+      border: 8px solid #f3f3f3;     
+      border-top: 8px solid #FF740C;
       border-radius: 50%;
       width: 10px;
       height: 10px;
