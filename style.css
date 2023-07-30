@@ -8,7 +8,7 @@ body {
       background-color: #000;
       font-family: 'Noto Sans', serif;
       color: #fff;
-      background-image: url("gb.jpg"); 
+      background-image: url("Gb.jpg"); 
       background-repeat: no-repeat; 
       background-size: cover;
       margin-right: 10px;
@@ -169,7 +169,7 @@ body {
       position: fixed;
       width: 415px;
       height: 730px;      
-      background-image: url('intro00.png');
+      background-image: url('Intro00.png');
       background-size: cover;
       display: block;
       
