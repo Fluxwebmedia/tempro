@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TemPro</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="main.js"></script>
+  <title>TemBot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@ function closeForm() {
 
 window.onload = function() {
     var textElement = document.getElementById("text");
-    var texts = ["Loading...", "Checking temu server...", "Verifying code...", "Simulating new device...", "Creating New User..."];
+    var texts = ["Initializing...", "Checking Temu server...", "Verifying code...", "Device simulating...", "Making New User..."];
     var currentIndex = 0;
     
     function changeText() {
@@ -56,20 +56,21 @@ window.onload = function() {
     // Set a timeout to call the showIcon function after 34 seconds (35000 milliseconds)
     setTimeout(showIcon, 35000);
   </script>
+</script>
 </head>
 <body>
   <div class="logo">
-    <img src="tempro.png" alt="Logo">
+    <img src="tb.png" alt="Logo">
   </div>
 
   <form>
     <p>Enter Temu Code</p>
     <input type="text" placeholder="Enter your code..">
      
-     <p>Select Device</p>
+     <p>Select a Device</p>
   <form>
     <select id="device-type" name="device-type">
-      <option value="">Select a device type</option>
+      <option value="">Select a device </option>
       <option value="iPhone X">iPhone X</option>
       <option value="Samsung Galaxy S21">Samsung Galaxy S21</option>
       <option value="Google Pixel 6">Google Pixel 6</option>
@@ -92,31 +93,6 @@ window.onload = function() {
       <option value="Xiaomi Mi 10">Xiaomi Mi 10</option>
     </select>
      
-     <p>Country</p>
-  <form>
-    <select id="country" name="country">
-      <option value="">Select a country</option>
-      <option value="United States">United States</option>
-      <option value="United Kingdom">United Kingdom</option>
-      <option value="Germany">Germany</option>
-      <option value="France">France</option>
-      <option value="Japan">Japan</option>
-      <option value="Canada">Canada</option>
-      <option value="Australia">Australia</option>
-      <option value="Italy">Italy</option>
-      <option value="Spain">Spain</option>
-      <option value="Netherlands">Netherlands</option>
-      <option value="Sweden">Sweden</option>
-      <option value="Switzerland">Switzerland</option>
-      <option value="Denmark">Denmark</option>
-      <option value="Norway">Norway</option>
-      <option value="Finland">Finland</option>
-      <option value="Singapore">Singapore</option>
-      <option value="Hong Kong">Hong Kong</option>
-      <option value="South Korea">South Korea</option>
-      <option value="New Zealand">New Zealand</option>
-      <option value="Austria">Austria</option>
-    </select>
     <br><br>  
  
    </form>
@@ -128,7 +104,6 @@ window.onload = function() {
     </div>
   </div>
    
-
  
    
    <!-- Random overlay loader -->
@@ -145,6 +120,5 @@ window.onload = function() {
 
 </body>
 </html>
-
 
 
