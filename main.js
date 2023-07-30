@@ -1,4 +1,4 @@
-   // Function to remove the overlay after 3 seconds
+// Function to remove the overlay after 3 seconds
     function removeOverlay() {
       var overlay = document.getElementById('overlay');
       overlay.style.display = 'none';
@@ -19,4 +19,3 @@
       var randomOverlayLoader = document.getElementById('random-overlay-loader');
       randomOverlayLoader.style.display = 'none';
     }
- 
